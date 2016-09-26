@@ -1,6 +1,6 @@
 {
   "name": "@sourceallies/data-structures",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A library of commonly used data structures for JavaScript interviews",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
