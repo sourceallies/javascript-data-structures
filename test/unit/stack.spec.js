@@ -28,6 +28,20 @@ describe('Stack', () => {
         expect(stack.peek()).to.equal(randomNumber);
     });
 
+    describe('Given an empty stack', () => {
+        it('should throw an error when peek() is called', () => {
+            expect(() => {
+                stack.peek();
+            }).to.throw('Cannot peek on an empty stack!');
+        });
+
+        it('should throw an error when pop() is called', () => {
+            expect(() => {
+                stack.pop();
+            }).to.throw('Cannot pop on an empty stack!');
+        });
+    });
+
     describe('Given a stack with two items', () => {
         let randomNumber;
 
