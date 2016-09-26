@@ -1,4 +1,4 @@
-import Queue from '../../src/queue';
+import {Queue} from '../../src';
 
 import {expect} from 'chai';
 import Chance from 'chance';

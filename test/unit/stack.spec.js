@@ -1,4 +1,4 @@
-import Stack from '../../src/stack';
+import {Stack} from '../../src';
 
 import {expect} from 'chai';
 import Chance from 'chance';
