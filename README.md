@@ -1,4 +1,3 @@
-# javascript-data-structures
 Since JavaScript doesn't have official implementations for any of the popular data
 structures, this might come in handy when doing candidate interviews with JavaScript.
 
