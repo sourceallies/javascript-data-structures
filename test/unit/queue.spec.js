@@ -28,6 +28,20 @@ describe('Queue', () => {
         expect(queue.peek()).to.equal(randomNumber);
     });
 
+    describe('Given an empty queue', () => {
+        it('should throw an error when peek() is called', () => {
+            expect(() => {
+                queue.peek();
+            }).to.throw('Cannot peek on an empty queue!');
+        });
+
+        it('should throw an error when dequeue() is called', () => {
+            expect(() => {
+                queue.dequeue();
+            }).to.throw('Cannot dequeue on an empty queue!');
+        });
+    });
+
     describe('Given a queue with two items', () => {
         let randomNumber;
 
