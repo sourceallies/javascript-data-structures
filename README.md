@@ -39,3 +39,7 @@ const queue = new Queue();
 | `queue.enqueue(element)` | Adds `element` to the back of the queue.                                                   |
 | `queue.peek()`           | Returns the next element in the queue.  Throws an error if the queue is empty.             |
 | `queue.dequeue()`        | Returns and removes the next element in the queue.  Throws an error if the queue is empty. |
+
+## License
+
+[Apache Public License v2.0](https://github.com/sourceallies/javascript-data-structures/blob/master/LICENSE)
