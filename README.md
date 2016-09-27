@@ -17,12 +17,12 @@ import {Stack} from '@sourceallies/data-structures';
 const stack = new Stack();
 ```
 
-| Function              | Description                                                                               |
-|-----------------------|-------------------------------------------------------------------------------------------|
-| `stack.size()`        | Returns the size of the stack.                                                            |
-| `stack.push(element)` | Adds `element` to the top of the stack.                                                   |
-| `stack.peek()`        | Returns the top element in the stack.  Throws an error if the stack is empty.             |
-| `stack.pop()`         | Returns and removes the top element in the stack.  Throws an error if the stack is empty. |
+| Function                 | Description                                                                                |
+|--------------------------|--------------------------------------------------------------------------------------------|
+| `stack.size()`           | Returns the size of the stack.                                                             |
+| `stack.push(element)`    | Adds `element` to the top of the stack.                                                    |
+| `stack.peek()`           | Returns the top element in the stack.  Throws an error if the stack is empty.              |
+| `stack.pop()`            | Returns and removes the top element in the stack.  Throws an error if the stack is empty.  |
 
 ### Queue
 
