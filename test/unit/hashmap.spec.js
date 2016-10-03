@@ -48,14 +48,16 @@ describe('Hashmap', () => {
 
     describe('Given a hashmap with more than one item', () => {
         let randomKey,
+            randomSecondKey,
             randomValue;
 
         beforeEach(() => {
             randomKey = chance.word();
+            randomSecondKey = chance.word();
             randomValue = chance.natural();
 
             hashmap.put(randomKey, randomValue);
-            hashmap.put(chance.word(), chance.natural());
+            hashmap.put(randomSecondKey, chance.natural());
         });
 
         it('should determine whether or not a key is present', () => {
@@ -84,6 +86,13 @@ describe('Hashmap', () => {
             expect(hashmap.size()).to.equal(1);
             expect(hashmap.get(randomKey)).to.equal(undefined);
             expect(hashmap.containsKey(randomKey)).to.equal(false);
+        });
+
+        it('should return an array of keys', () => {
+            const keys = hashmap.getKeys();
+
+            expect(keys).to.contain(randomKey);
+            expect(keys).to.contain(randomSecondKey);
         });
     });
 });

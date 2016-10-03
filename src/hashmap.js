@@ -23,6 +23,10 @@ export class Hashmap {
         return this.map[key];
     }
 
+    getKeys() {
+        return Object.keys(this.map);
+    }
+
     containsKey(key) {
         if (key === undefined) {
             throw new Error('This hashmap implementation cannot contain undefined as a key!');

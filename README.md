@@ -52,9 +52,10 @@ const hashmap = new Hashmap();
 | `hashmap.size()`               | Returns the number of key-value pairs in this map                                |
 | `hashmap.put(key, value)`      | Associates the given value with the given key in this map                        |
 | `hashmap.get(key)`             | Returns the value associated with this key, or `undefined` if it doesn't exist   |
+| `hashmap.getKeys()`            | Returns an array of all keys in this map                                         |
 | `hashmap.containsKey(key)`     | Returns `true` if the given key is present in this map                           |
 | `hashmap.containsValue(value)` | Returns `true` if this map contains one or more keys that map to the given value |
-| `hashmap.remove(key)`          | Removes the key-value pair, if present                                           |
+| `hashmap.remove(key)`          | Removes the key-value pair, if present                                           |                                        |
 
 ## License
 
